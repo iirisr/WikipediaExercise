@@ -10,4 +10,5 @@ import Foundation
 
 struct Identifiers {
     static let placeCell = "place_item"
+    static let placesHeader = "Header"
 }

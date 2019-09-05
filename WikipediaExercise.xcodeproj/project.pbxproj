@@ -17,6 +17,8 @@
 		0340F45A2320E78E00D76C61 /* PlaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */; };
 		0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F45C2320ECFC00D76C61 /* MainVC.swift */; };
 		0340F45F2320F1B600D76C61 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F45E2320F1B600D76C61 /* Consts.swift */; };
+		0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */; };
+		0340F4632320F8FE00D76C61 /* PlaceHeaderResusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCollectionViewCell.xib; sourceTree = "<group>"; };
 		0340F45C2320ECFC00D76C61 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0340F45E2320F1B600D76C61 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHeaderResusableView.swift; sourceTree = "<group>"; };
+		0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceHeaderResusableView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,8 @@
 				0340F4572320E78E00D76C61 /* PlaceCollectionViewCell.swift */,
 				0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */,
 				0340F45C2320ECFC00D76C61 /* MainVC.swift */,
-				0340F45E2320F1B600D76C61 /* Consts.swift */,
+				0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */,
+				0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */,
 			);
 			path = WikipediaExercise;
 			sourceTree = "<group>";
@@ -83,6 +88,7 @@
 				0340F44C2320D9F700D76C61 /* LaunchScreen.storyboard */,
 				0340F4402320D9F600D76C61 /* AppDelegate.swift */,
 				0340F44A2320D9F700D76C61 /* Assets.xcassets */,
+				0340F45E2320F1B600D76C61 /* Consts.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0340F45A2320E78E00D76C61 /* PlaceCollectionViewCell.xib in Resources */,
+				0340F4632320F8FE00D76C61 /* PlaceHeaderResusableView.xib in Resources */,
 				0340F44E2320D9F700D76C61 /* LaunchScreen.storyboard in Resources */,
 				0340F44B2320D9F700D76C61 /* Assets.xcassets in Resources */,
 				0340F4462320D9F600D76C61 /* Main.storyboard in Resources */,
@@ -164,6 +171,7 @@
 				0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */,
 				0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */,
 				0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */,
+				0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */,
 				0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
