@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4402320D9F600D76C61 /* AppDelegate.swift */; };
-		0340F4432320D9F600D76C61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4422320D9F600D76C61 /* ViewController.swift */; };
 		0340F4462320D9F600D76C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4442320D9F600D76C61 /* Main.storyboard */; };
 		0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */; };
 		0340F44B2320D9F700D76C61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0340F44A2320D9F700D76C61 /* Assets.xcassets */; };
 		0340F44E2320D9F700D76C61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340F44C2320D9F700D76C61 /* LaunchScreen.storyboard */; };
+		0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4552320E1F500D76C61 /* UIKitExtensions.swift */; };
+		0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4572320E78E00D76C61 /* PlaceCollectionViewCell.swift */; };
+		0340F45A2320E78E00D76C61 /* PlaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */; };
+		0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F45C2320ECFC00D76C61 /* MainVC.swift */; };
+		0340F45F2320F1B600D76C61 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F45E2320F1B600D76C61 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0340F43D2320D9F600D76C61 /* WikipediaExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikipediaExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0340F4402320D9F600D76C61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0340F4422320D9F600D76C61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0340F4452320D9F600D76C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0340F4482320D9F600D76C61 /* WikipediaExercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WikipediaExercise.xcdatamodel; sourceTree = "<group>"; };
 		0340F44A2320D9F700D76C61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0340F44D2320D9F700D76C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0340F44F2320D9F700D76C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0340F4552320E1F500D76C61 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		0340F4572320E78E00D76C61 /* PlaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCollectionViewCell.swift; sourceTree = "<group>"; };
+		0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCollectionViewCell.xib; sourceTree = "<group>"; };
+		0340F45C2320ECFC00D76C61 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0340F45E2320F1B600D76C61 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		0340F43F2320D9F600D76C61 /* WikipediaExercise */ = {
 			isa = PBXGroup;
 			children = (
-				0340F4402320D9F600D76C61 /* AppDelegate.swift */,
-				0340F4422320D9F600D76C61 /* ViewController.swift */,
-				0340F4442320D9F600D76C61 /* Main.storyboard */,
-				0340F44A2320D9F700D76C61 /* Assets.xcassets */,
-				0340F44C2320D9F700D76C61 /* LaunchScreen.storyboard */,
-				0340F44F2320D9F700D76C61 /* Info.plist */,
+				0340F45B2320EC7800D76C61 /* Supporting files */,
 				0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */,
+				0340F44F2320D9F700D76C61 /* Info.plist */,
+				0340F4552320E1F500D76C61 /* UIKitExtensions.swift */,
+				0340F4572320E78E00D76C61 /* PlaceCollectionViewCell.swift */,
+				0340F4582320E78E00D76C61 /* PlaceCollectionViewCell.xib */,
+				0340F45C2320ECFC00D76C61 /* MainVC.swift */,
+				0340F45E2320F1B600D76C61 /* Consts.swift */,
 			);
 			path = WikipediaExercise;
+			sourceTree = "<group>";
+		};
+		0340F45B2320EC7800D76C61 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				0340F4442320D9F600D76C61 /* Main.storyboard */,
+				0340F44C2320D9F700D76C61 /* LaunchScreen.storyboard */,
+				0340F4402320D9F600D76C61 /* AppDelegate.swift */,
+				0340F44A2320D9F700D76C61 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0340F45A2320E78E00D76C61 /* PlaceCollectionViewCell.xib in Resources */,
 				0340F44E2320D9F700D76C61 /* LaunchScreen.storyboard in Resources */,
 				0340F44B2320D9F700D76C61 /* Assets.xcassets in Resources */,
 				0340F4462320D9F600D76C61 /* Main.storyboard in Resources */,
@@ -138,8 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0340F4432320D9F600D76C61 /* ViewController.swift in Sources */,
+				0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */,
+				0340F45F2320F1B600D76C61 /* Consts.swift in Sources */,
+				0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */,
 				0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */,
+				0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */,
 				0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="WikipediaExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-Ja-y4F">
+                                <rect key="frame" x="37.5" y="50" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ory-h0-zyB" userLabel="Wikipedia Button">
+                                <rect key="frame" x="37.5" y="100" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="height" id="Mgu-AM-jRQ"/>
+                                    <constraint firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="height" multiplier="1:1" id="eSw-xQ-gNf"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sourceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUo-mT-XVi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clH-ql-9pU" userLabel="Local Button">
+                                <rect key="frame" x="107.5" y="100" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sourceButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PJK-zk-GkF"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-NW-EYS" userLabel="Inner Wikipedia View">
+                                <rect key="frame" x="42" y="104.5" width="21" height="21"/>
+                                <color key="backgroundColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kJ9-NW-EYS" secondAttribute="height" id="UEK-p0-oaL"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-DQ-bJa" userLabel="Inner Local View">
+                                <rect key="frame" x="112" y="104.5" width="21" height="21"/>
+                                <color key="backgroundColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0xb-DQ-bJa" secondAttribute="height" id="zdX-TA-zeW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sS-lf-B6N">
+                                <rect key="frame" x="177.5" y="100" width="160" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-wx-X59">
+                                <rect key="frame" x="37.5" y="160" width="300" height="477"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8kv-bs-QMP">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="QY3-Pb-b0r" customClass="PlaceCollectionViewCell" customModule="WikipediaExercise" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wikipedia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ah-tW-N2u" userLabel="Wikipedia Label">
+                                <rect key="frame" x="25.5" y="130" width="54" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bpl-Mn-mUH" userLabel="Local Label">
+                                <rect key="frame" x="95.5" y="130" width="54" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FBg-Ja-y4F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="4eS-hi-y5Q"/>
+                            <constraint firstItem="Bpl-Mn-mUH" firstAttribute="top" secondItem="clH-ql-9pU" secondAttribute="bottom" id="5pk-rh-wht"/>
+                            <constraint firstItem="2sS-lf-B6N" firstAttribute="top" secondItem="clH-ql-9pU" secondAttribute="top" id="8un-eU-NVc"/>
+                            <constraint firstItem="1Ah-tW-N2u" firstAttribute="top" secondItem="ory-h0-zyB" secondAttribute="bottom" id="C1h-ka-REx"/>
+                            <constraint firstItem="oLT-wx-X59" firstAttribute="top" secondItem="2sS-lf-B6N" secondAttribute="bottom" constant="30" id="FNM-vE-wZ8"/>
+                            <constraint firstItem="ory-h0-zyB" firstAttribute="top" secondItem="FBg-Ja-y4F" secondAttribute="bottom" constant="20" id="GMs-Ov-GxI"/>
+                            <constraint firstItem="Bpl-Mn-mUH" firstAttribute="width" secondItem="clH-ql-9pU" secondAttribute="width" multiplier="18:10" id="Ha0-X7-Aii"/>
+                            <constraint firstItem="clH-ql-9pU" firstAttribute="top" secondItem="ory-h0-zyB" secondAttribute="top" id="J6d-oE-lbZ"/>
+                            <constraint firstItem="oLT-wx-X59" firstAttribute="trailing" secondItem="FBg-Ja-y4F" secondAttribute="trailing" id="Jh2-My-NiU"/>
+                            <constraint firstItem="clH-ql-9pU" firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="width" id="QCk-xR-yvH"/>
+                            <constraint firstItem="kJ9-NW-EYS" firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="width" multiplier="7:10" id="T0z-8V-NQY"/>
+                            <constraint firstItem="2sS-lf-B6N" firstAttribute="bottom" secondItem="clH-ql-9pU" secondAttribute="bottom" id="V6a-yn-RYS"/>
+                            <constraint firstItem="0xb-DQ-bJa" firstAttribute="centerX" secondItem="clH-ql-9pU" secondAttribute="centerX" id="W2t-3C-KSD"/>
+                            <constraint firstItem="oLT-wx-X59" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-30" id="ZfP-NT-3hc"/>
+                            <constraint firstItem="2sS-lf-B6N" firstAttribute="trailing" secondItem="FBg-Ja-y4F" secondAttribute="trailing" id="Znp-rT-WLT"/>
+                            <constraint firstItem="oLT-wx-X59" firstAttribute="leading" secondItem="FBg-Ja-y4F" secondAttribute="leading" id="cWq-bn-cYv"/>
+                            <constraint firstItem="clH-ql-9pU" firstAttribute="height" secondItem="ory-h0-zyB" secondAttribute="height" id="fVc-QK-fy5"/>
+                            <constraint firstItem="FBg-Ja-y4F" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="8:10" id="g53-fK-8bb"/>
+                            <constraint firstItem="Bpl-Mn-mUH" firstAttribute="centerX" secondItem="clH-ql-9pU" secondAttribute="centerX" id="gJv-rk-Y3P"/>
+                            <constraint firstItem="0xb-DQ-bJa" firstAttribute="height" secondItem="clH-ql-9pU" secondAttribute="height" multiplier="7:10" id="hFM-UF-UW8"/>
+                            <constraint firstItem="kJ9-NW-EYS" firstAttribute="centerX" secondItem="ory-h0-zyB" secondAttribute="centerX" id="hPo-JE-Ghh"/>
+                            <constraint firstItem="FBg-Ja-y4F" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hkd-ct-fEI"/>
+                            <constraint firstItem="0xb-DQ-bJa" firstAttribute="centerY" secondItem="clH-ql-9pU" secondAttribute="centerY" id="hu9-1v-L2N"/>
+                            <constraint firstItem="clH-ql-9pU" firstAttribute="leading" secondItem="ory-h0-zyB" secondAttribute="trailing" constant="40" id="kvx-ab-Snk"/>
+                            <constraint firstItem="1Ah-tW-N2u" firstAttribute="centerX" secondItem="ory-h0-zyB" secondAttribute="centerX" id="lCR-aR-3BA"/>
+                            <constraint firstItem="1Ah-tW-N2u" firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="width" multiplier="18:10" id="mhV-Bq-JoH"/>
+                            <constraint firstItem="2sS-lf-B6N" firstAttribute="leading" secondItem="clH-ql-9pU" secondAttribute="trailing" constant="40" id="mnm-TF-9E2"/>
+                            <constraint firstItem="ory-h0-zyB" firstAttribute="leading" secondItem="FBg-Ja-y4F" secondAttribute="leading" id="qsi-z6-whG"/>
+                            <constraint firstItem="kJ9-NW-EYS" firstAttribute="centerY" secondItem="ory-h0-zyB" secondAttribute="centerY" id="t2d-3l-FMZ"/>
+                            <constraint firstItem="ory-h0-zyB" firstAttribute="width" secondItem="FBg-Ja-y4F" secondAttribute="width" multiplier="1:10" id="uYz-Es-sq0"/>
+                            <constraint firstItem="0xb-DQ-bJa" firstAttribute="width" secondItem="0xb-DQ-bJa" secondAttribute="height" id="zhp-Mk-U9Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="innerLocalView" destination="0xb-DQ-bJa" id="u2N-zN-Rdj"/>
+                        <outlet property="innerWikipediaView" destination="kJ9-NW-EYS" id="Ff4-fR-yQw"/>
+                        <outlet property="localButton" destination="clH-ql-9pU" id="bTe-i7-mnL"/>
+                        <outlet property="searchTextField" destination="FBg-Ja-y4F" id="q1P-GF-s7j"/>
+                        <outlet property="wikipediaButton" destination="ory-h0-zyB" id="3Mz-Cl-842"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
