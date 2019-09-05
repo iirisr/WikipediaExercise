@@ -86,7 +86,6 @@
 			children = (
 				0340F47623212C8500D76C61 /* coreData */,
 				0340F45B2320EC7800D76C61 /* Supporting files */,
-				0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */,
 				0340F44F2320D9F700D76C61 /* Info.plist */,
 				0340F4552320E1F500D76C61 /* UIKitExtensions.swift */,
 				0340F4572320E78E00D76C61 /* PlaceCollectionViewCell.swift */,
@@ -116,6 +115,7 @@
 		0340F47623212C8500D76C61 /* coreData */ = {
 			isa = PBXGroup;
 			children = (
+				0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */,
 				0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */,
 				0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */,
 				0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */,

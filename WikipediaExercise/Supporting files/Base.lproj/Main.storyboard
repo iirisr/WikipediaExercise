@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="WikipediaExercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-Ja-y4F">
-                                <rect key="frame" x="37.5" y="50" width="300" height="30"/>
+                                <rect key="frame" x="102.5" y="50" width="819" height="89.5"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ory-h0-zyB" userLabel="Wikipedia Button">
-                                <rect key="frame" x="37.5" y="100" width="30" height="30"/>
+                                <rect key="frame" x="102.5" y="159.5" width="82" height="82"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="height" id="Mgu-AM-jRQ"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clH-ql-9pU" userLabel="Local Button">
-                                <rect key="frame" x="107.5" y="100" width="30" height="30"/>
+                                <rect key="frame" x="224.5" y="159.5" width="81.5" height="82"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <userDefinedRuntimeAttributes>
@@ -67,7 +67,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kJ9-NW-EYS" userLabel="Inner Wikipedia View">
-                                <rect key="frame" x="42" y="104.5" width="21" height="21"/>
+                                <rect key="frame" x="114.5" y="172" width="57.5" height="57.5"/>
                                 <color key="backgroundColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="kJ9-NW-EYS" secondAttribute="height" id="UEK-p0-oaL"/>
@@ -79,7 +79,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xb-DQ-bJa" userLabel="Inner Local View">
-                                <rect key="frame" x="112" y="104.5" width="21" height="21"/>
+                                <rect key="frame" x="236.5" y="172" width="57.5" height="57.5"/>
                                 <color key="backgroundColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0xb-DQ-bJa" secondAttribute="height" id="zdX-TA-zeW"/>
@@ -91,7 +91,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sS-lf-B6N">
-                                <rect key="frame" x="177.5" y="100" width="160" height="30"/>
+                                <rect key="frame" x="346" y="159.5" width="575.5" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Search">
                                     <color key="titleColor" red="0.085959073649999995" green="0.20186862799999999" blue="0.92441907050000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,7 +109,7 @@
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-wx-X59">
-                                <rect key="frame" x="37.5" y="160" width="300" height="477"/>
+                                <rect key="frame" x="102.5" y="271.5" width="819" height="1064.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8kv-bs-QMP">
                                     <size key="itemSize" width="50" height="50"/>
@@ -129,13 +129,13 @@
                                 </cells>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wikipedia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1Ah-tW-N2u" userLabel="Wikipedia Label">
-                                <rect key="frame" x="25.5" y="130" width="54" height="12"/>
+                                <rect key="frame" x="69.5" y="241.5" width="147.5" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bpl-Mn-mUH" userLabel="Local Label">
-                                <rect key="frame" x="95.5" y="130" width="54" height="12"/>
+                                <rect key="frame" x="191.5" y="241.5" width="147.5" height="12"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -153,6 +153,7 @@
                             <constraint firstItem="clH-ql-9pU" firstAttribute="top" secondItem="ory-h0-zyB" secondAttribute="top" id="J6d-oE-lbZ"/>
                             <constraint firstItem="oLT-wx-X59" firstAttribute="trailing" secondItem="FBg-Ja-y4F" secondAttribute="trailing" id="Jh2-My-NiU"/>
                             <constraint firstItem="clH-ql-9pU" firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="width" id="QCk-xR-yvH"/>
+                            <constraint firstItem="FBg-Ja-y4F" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="1:15" id="Smv-mb-un3"/>
                             <constraint firstItem="kJ9-NW-EYS" firstAttribute="width" secondItem="ory-h0-zyB" secondAttribute="width" multiplier="7:10" id="T0z-8V-NQY"/>
                             <constraint firstItem="2sS-lf-B6N" firstAttribute="bottom" secondItem="clH-ql-9pU" secondAttribute="bottom" id="V6a-yn-RYS"/>
                             <constraint firstItem="0xb-DQ-bJa" firstAttribute="centerX" secondItem="clH-ql-9pU" secondAttribute="centerX" id="W2t-3C-KSD"/>

@@ -69,6 +69,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     }
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
+        searchTextField.resignFirstResponder()
         places = []
         placesCollection.reloadData()
         if let text = searchTextField.text {
