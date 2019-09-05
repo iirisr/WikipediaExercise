@@ -19,6 +19,9 @@
 		0340F45F2320F1B600D76C61 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F45E2320F1B600D76C61 /* Consts.swift */; };
 		0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */; };
 		0340F4632320F8FE00D76C61 /* PlaceHeaderResusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */; };
+		0340F4652321151200D76C61 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4642321151200D76C61 /* SearchProtocol.swift */; };
+		0340F4692321166F00D76C61 /* WikipediaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4682321166F00D76C61 /* WikipediaSearch.swift */; };
+		0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46C2321181900D76C61 /* LocalSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		0340F45E2320F1B600D76C61 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHeaderResusableView.swift; sourceTree = "<group>"; };
 		0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceHeaderResusableView.xib; sourceTree = "<group>"; };
+		0340F4642321151200D76C61 /* SearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
+		0340F4682321166F00D76C61 /* WikipediaSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearch.swift; sourceTree = "<group>"; };
+		0340F46C2321181900D76C61 /* LocalSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalSearch.swift; path = ../LocalSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				0340F45C2320ECFC00D76C61 /* MainVC.swift */,
 				0340F4602320F8FE00D76C61 /* PlaceHeaderResusableView.swift */,
 				0340F4612320F8FE00D76C61 /* PlaceHeaderResusableView.xib */,
+				0340F4642321151200D76C61 /* SearchProtocol.swift */,
+				0340F4682321166F00D76C61 /* WikipediaSearch.swift */,
+				0340F46C2321181900D76C61 /* LocalSearch.swift */,
 			);
 			path = WikipediaExercise;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */,
 				0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */,
 				0340F45F2320F1B600D76C61 /* Consts.swift in Sources */,
 				0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */,
@@ -173,6 +183,8 @@
 				0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */,
 				0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */,
 				0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */,
+				0340F4692321166F00D76C61 /* WikipediaSearch.swift in Sources */,
+				0340F4652321151200D76C61 /* SearchProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

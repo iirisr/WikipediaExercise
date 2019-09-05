@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITextFieldDelegate {
+class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITextFieldDelegate, SearchProtocol {
     
     
     @IBOutlet weak var searchTextField: UITextField!
@@ -28,6 +28,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     var isWikipediaSearchPressed = true
     var errorMessage: String?
     
+    var wikipediaSearch = WikipediaSearch()
+    var localSearch = LocalSearch()
+    
     var places: [Place] = []
     
     
@@ -38,6 +41,9 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
         placesCollection.dataSource = self
         searchTextField.delegate = self
         
+        wikipediaSearch.delegate = self
+        localSearch.delegate = self
+        
         sourceButtonPressed(wikipediaButton)
         
         placesCollection.register(UINib(nibName: "PlaceHeaderResusableView", bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: Identifiers.placesHeader)
@@ -47,8 +53,8 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
         placesCollection.register(UINib(nibName: "PlaceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: Identifiers.placeCell)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         wikipediaButton.cornerRadius = wikipediaButton.frame.width / 2
         localButton.cornerRadius = localButton.frame.width / 2
         innerWikipediaView.cornerRadius = innerWikipediaView.frame.width / 2
@@ -63,38 +69,18 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     }
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
+        places = []
+        placesCollection.reloadData()
         if let text = searchTextField.text {
-            searchWiki(forText: text)
+            if isWikipediaSearchPressed {
+                wikipediaSearch.search(forText: text)
+            } else {
+                localSearch.search(forText: text)
+            }
         }
     }
     
-    private func searchWiki(forText text: String) {
-        let session = URLSession(configuration: .default)
-        var dataTask: URLSessionDataTask?
-        
-        let place = text.replacingOccurrences(of: " ", with: "%20")
-        let url = URL(string: "http://api.geonames.org/wikipediaSearchJSON?q=" + place + "&maxRows=10&username=tingz")
-        
-        dataTask?.cancel()
-        
-        dataTask = session.dataTask(with: url!, completionHandler: { [weak self] data, response, error in
-            defer {
-                dataTask = nil
-            }
-            if let error = error {
-                self?.errorMessage = "DataTask error: " + error.localizedDescription
-            } else if
-                let data = data,
-                let response = response as? HTTPURLResponse,
-                response.statusCode == 200 {
-                self?.updateSearchResults(data)
-            }
-        })
-        
-        dataTask?.resume()
-    }
-    
-    private func updateSearchResults(_ data: Data) {
+    internal func updateSearchResults(_ data: Data) {
         print("updateSearchResults")
         
         var response: [String: Any]?
@@ -169,9 +155,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        if let text = textField.text {
-            searchWiki(forText: text)
-        }
+        textField.resignFirstResponder()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
