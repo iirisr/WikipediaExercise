@@ -19,7 +19,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     @IBOutlet weak var placesCollection: UICollectionView!
     
     
-    struct Place {
+    struct PlaceResult {
         var title = String()
         var summary = String()
         var imageUrl: String?
@@ -31,7 +31,7 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
     var wikipediaSearch = WikipediaSearch()
     var localSearch = LocalSearch()
     
-    var places: [Place] = []
+    var places: [PlaceResult] = []
     
     
     override func viewDidLoad() {
@@ -109,15 +109,33 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
             let imageUrl = place["thumbnailImg"] as? String
             
             print("title=\(title), summary=\(summary)" )
-            places.append(Place(title: title, summary: summary, imageUrl: imageUrl))
+            places.append(PlaceResult(title: title, summary: summary, imageUrl: imageUrl))
         }
+        
+        
+        self.saveToCoreData()
         
         print("Done parsing")
         DispatchQueue.main.async {
             self.placesCollection.reloadData()
         }
     }
+    
+    internal func updateSearchResults(_ results: [MainVC.PlaceResult]) {
+        print("updateSearchResults")
+        places = results
+        DispatchQueue.main.async {
+            self.placesCollection.reloadData()
+        }
+    }
 
+    private func saveToCoreData() {
+        DispatchQueue.main.async {
+            if let text = self.searchTextField.text {
+                CoreDataModelForSearch().saveToCoreData(text: text, searchResults: self.places)
+            }
+        }
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -163,8 +181,4 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
         return true
     }
     
-    
-
-
-
 }

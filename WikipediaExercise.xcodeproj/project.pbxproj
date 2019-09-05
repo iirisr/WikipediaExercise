@@ -22,6 +22,11 @@
 		0340F4652321151200D76C61 /* SearchProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4642321151200D76C61 /* SearchProtocol.swift */; };
 		0340F4692321166F00D76C61 /* WikipediaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4682321166F00D76C61 /* WikipediaSearch.swift */; };
 		0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46C2321181900D76C61 /* LocalSearch.swift */; };
+		0340F47223212C6B00D76C61 /* Search+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */; };
+		0340F47323212C6B00D76C61 /* Search+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */; };
+		0340F47423212C6B00D76C61 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */; };
+		0340F47523212C6B00D76C61 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */; };
+		0340F47823212DDE00D76C61 /* coreDataModelForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		0340F4642321151200D76C61 /* SearchProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProtocol.swift; sourceTree = "<group>"; };
 		0340F4682321166F00D76C61 /* WikipediaSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearch.swift; sourceTree = "<group>"; };
 		0340F46C2321181900D76C61 /* LocalSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalSearch.swift; path = ../LocalSearch.swift; sourceTree = "<group>"; };
+		0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataModelForSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 		0340F43F2320D9F600D76C61 /* WikipediaExercise */ = {
 			isa = PBXGroup;
 			children = (
+				0340F47623212C8500D76C61 /* coreData */,
 				0340F45B2320EC7800D76C61 /* Supporting files */,
 				0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */,
 				0340F44F2320D9F700D76C61 /* Info.plist */,
@@ -100,6 +111,18 @@
 				0340F45E2320F1B600D76C61 /* Consts.swift */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		0340F47623212C8500D76C61 /* coreData */ = {
+			isa = PBXGroup;
+			children = (
+				0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */,
+				0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */,
+				0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */,
+				0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */,
+				0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */,
+			);
+			path = coreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0340F47423212C6B00D76C61 /* Place+CoreDataClass.swift in Sources */,
 				0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */,
+				0340F47223212C6B00D76C61 /* Search+CoreDataClass.swift in Sources */,
 				0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */,
 				0340F45F2320F1B600D76C61 /* Consts.swift in Sources */,
 				0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */,
 				0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */,
+				0340F47523212C6B00D76C61 /* Place+CoreDataProperties.swift in Sources */,
 				0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */,
+				0340F47323212C6B00D76C61 /* Search+CoreDataProperties.swift in Sources */,
+				0340F47823212DDE00D76C61 /* coreDataModelForSearch.swift in Sources */,
 				0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */,
 				0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */,
 				0340F4692321166F00D76C61 /* WikipediaSearch.swift in Sources */,

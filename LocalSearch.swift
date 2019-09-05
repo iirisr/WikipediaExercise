@@ -13,6 +13,7 @@ class LocalSearch {
     var errorMessage: String?
     
     func search(forText text: String) {
-
+        let results = CoreDataModelForSearch().readSearchResultsFromCoreData(forText: text)
+        delegate?.updateSearchResults(results)
     }
 }
