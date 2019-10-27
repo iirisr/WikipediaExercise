@@ -80,53 +80,16 @@ class MainVC: UIViewController, UICollectionViewDelegate, UICollectionViewDelega
             }
         }
     }
-    
-    internal func updateSearchResults(_ data: Data) {
-        print("updateSearchResults")
-        
-        var response: [String: Any]?
-        
-        do {
-            response = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-        } catch let parseError as NSError {
-            errorMessage = "JSONSerialization error: \(parseError.localizedDescription)\n"
-            return
-        }
-        
-        guard let geonames = response!["geonames"] as? [[String: Any]] else {
-            errorMessage = "Error parsing\n"
-            return
-        }
-        
-        for place in geonames {
-            guard let title = place["title"] as? String else {
-                errorMessage = "Error parsing the title\n"
-                return
-            }
-            guard let summary = place["summary"] as? String else {
-                errorMessage = "Error parsing the summary\n"
-                return
-            }
-            let imageUrl = place["thumbnailImg"] as? String
-            
-            print("title=\(title), summary=\(summary)" )
-            places.append(PlaceResult(title: title, summary: summary, imageUrl: imageUrl))
-        }
-        
-        
-        self.saveToCoreData()
-        
-        print("Done parsing")
-        DispatchQueue.main.async {
-            self.placesCollection.reloadData()
-        }
-    }
-    
+
     internal func updateSearchResults(_ results: [MainVC.PlaceResult]) {
         print("updateSearchResults")
         places = results
         DispatchQueue.main.async {
             self.placesCollection.reloadData()
+        }
+        
+        if isWikipediaSearchPressed {
+            self.saveToCoreData()
         }
     }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0324B0B72365E6CF000280CA /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324B0B52365E6CF000280CA /* Place+CoreDataProperties.swift */; };
+		0324B0B82365E6CF000280CA /* Search+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324B0B62365E6CF000280CA /* Search+CoreDataProperties.swift */; };
 		0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4402320D9F600D76C61 /* AppDelegate.swift */; };
 		0340F4462320D9F600D76C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0340F4442320D9F600D76C61 /* Main.storyboard */; };
 		0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */; };
@@ -23,13 +25,13 @@
 		0340F4692321166F00D76C61 /* WikipediaSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F4682321166F00D76C61 /* WikipediaSearch.swift */; };
 		0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46C2321181900D76C61 /* LocalSearch.swift */; };
 		0340F47223212C6B00D76C61 /* Search+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */; };
-		0340F47323212C6B00D76C61 /* Search+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */; };
 		0340F47423212C6B00D76C61 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */; };
-		0340F47523212C6B00D76C61 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */; };
 		0340F47823212DDE00D76C61 /* coreDataModelForSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0324B0B52365E6CF000280CA /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0324B0B62365E6CF000280CA /* Search+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0340F43D2320D9F600D76C61 /* WikipediaExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikipediaExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0340F4402320D9F600D76C61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0340F4452320D9F600D76C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,9 +50,7 @@
 		0340F4682321166F00D76C61 /* WikipediaSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaSearch.swift; sourceTree = "<group>"; };
 		0340F46C2321181900D76C61 /* LocalSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalSearch.swift; path = ../LocalSearch.swift; sourceTree = "<group>"; };
 		0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Search+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreDataModelForSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,11 +115,11 @@
 		0340F47623212C8500D76C61 /* coreData */ = {
 			isa = PBXGroup;
 			children = (
+				0324B0B52365E6CF000280CA /* Place+CoreDataProperties.swift */,
+				0324B0B62365E6CF000280CA /* Search+CoreDataProperties.swift */,
 				0340F4472320D9F600D76C61 /* WikipediaExercise.xcdatamodeld */,
 				0340F46E23212C6B00D76C61 /* Search+CoreDataClass.swift */,
-				0340F46F23212C6B00D76C61 /* Search+CoreDataProperties.swift */,
 				0340F47023212C6B00D76C61 /* Place+CoreDataClass.swift */,
-				0340F47123212C6B00D76C61 /* Place+CoreDataProperties.swift */,
 				0340F47723212DDE00D76C61 /* coreDataModelForSearch.swift */,
 			);
 			path = coreData;
@@ -200,14 +200,14 @@
 			files = (
 				0340F47423212C6B00D76C61 /* Place+CoreDataClass.swift in Sources */,
 				0340F46D2321181900D76C61 /* LocalSearch.swift in Sources */,
+				0324B0B82365E6CF000280CA /* Search+CoreDataProperties.swift in Sources */,
 				0340F47223212C6B00D76C61 /* Search+CoreDataClass.swift in Sources */,
 				0340F45D2320ECFC00D76C61 /* MainVC.swift in Sources */,
 				0340F45F2320F1B600D76C61 /* Consts.swift in Sources */,
 				0340F4592320E78E00D76C61 /* PlaceCollectionViewCell.swift in Sources */,
 				0340F4492320D9F600D76C61 /* WikipediaExercise.xcdatamodeld in Sources */,
-				0340F47523212C6B00D76C61 /* Place+CoreDataProperties.swift in Sources */,
 				0340F4562320E1F500D76C61 /* UIKitExtensions.swift in Sources */,
-				0340F47323212C6B00D76C61 /* Search+CoreDataProperties.swift in Sources */,
+				0324B0B72365E6CF000280CA /* Place+CoreDataProperties.swift in Sources */,
 				0340F47823212DDE00D76C61 /* coreDataModelForSearch.swift in Sources */,
 				0340F4622320F8FE00D76C61 /* PlaceHeaderResusableView.swift in Sources */,
 				0340F4412320D9F600D76C61 /* AppDelegate.swift in Sources */,

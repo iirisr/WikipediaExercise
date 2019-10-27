@@ -32,7 +32,7 @@ class CoreDataModelForSearch {
         
         do {
             try context.save()
-            print("Saved \(searchDB.text) to CoreData")
+            print("Saved \(String(describing: searchDB.text)) to CoreData")
         }
         catch {
             print("Error saving to CoreData")

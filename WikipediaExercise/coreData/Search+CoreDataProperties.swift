@@ -2,7 +2,7 @@
 //  Search+CoreDataProperties.swift
 //  WikipediaExercise
 //
-//  Created by Iris Ronen on 9/5/19.
+//  Created by Iris Ronen on 10/27/19.
 //  Copyright © 2019 Iris Ronen. All rights reserved.
 //
 //
@@ -17,7 +17,7 @@ extension Search {
         return NSFetchRequest<Search>(entityName: "Search")
     }
 
-    @NSManaged public var text: String
+    @NSManaged public var text: String?
     @NSManaged public var places: NSSet?
 
 }
